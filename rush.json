@@ -452,10 +452,20 @@
     //   "reviewCategory": "production"
     // },
     // 
-    // {
-    //   "packageName": "my-toolchain",
-    //   "projectFolder": "tools/my-toolchain",
-    //   "reviewCategory": "tools"
-    // }
+    {
+      "packageName": "@beejsdev/core",
+      "projectFolder": "core",
+      "reviewCategory": "core"
+    },
+    {
+      "packageName": "@beejsdev/bee-webpack-loader",
+      "projectFolder": "tools/webpack-loader-bee",
+      "reviewCategory": "tools"
+    },
+    {
+      "packageName": "@beejsdev/examples.bees-todo",
+      "projectFolder": "examples/bees-todo",
+      "reviewCategory": "examples"
+    }
   ]
 }

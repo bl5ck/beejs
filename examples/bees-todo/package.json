@@ -1,0 +1,17 @@
+{
+  "name": "@beejsdev/examples.bees-todo",
+  "version": "0.0.1",
+  "description": "An example of using BeeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Steve Tran",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.46.0"
+  },
+  "dependencies": {
+    "@beejsdev/bee-webpack-loader": "~0.0.1"
+  }
+}
