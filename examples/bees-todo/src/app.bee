@@ -1,11 +1,7 @@
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bee Todo</title>
-  </head>
-  <body>
-    <%-include('./todo/todo.bee')%>
-  </body>
-</html>
+<%-include('./todo/todo.bee')%>
+<script>
+  import { Module } from '@mybee/core';
+
+  @Module()
+  export default class AppComponent {}
+</script>

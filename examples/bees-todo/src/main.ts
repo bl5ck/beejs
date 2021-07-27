@@ -1,2 +1,2 @@
 import { bootstrap } from '@mybee/core';
-bootstrap('#app');
+bootstrap('#app', 'AppComponent');

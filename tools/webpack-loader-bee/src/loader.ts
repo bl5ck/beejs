@@ -11,7 +11,7 @@ export default function beeLoader(source) {
     name: 'Bee Loader',
     baseDataPath: 'options',
   });
-
+  console.log(source);
   const json = JSON.stringify(source)
     .replace(/\u2028/g, '\\u2028')
     .replace(/\u2029/g, '\\u2029');
