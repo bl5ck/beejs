@@ -1,0 +1,13 @@
+{
+  "files": {
+    "tools/webpack-loader-bee/.rush/temp/shrinkwrap-deps.json": "d5e3ac2790c8173a8de5e6837adc045d083298cd",
+    "tools/webpack-loader-bee/babel.config.js": "f037a1a2a1477424dfca78799d57f863a5b74f81",
+    "tools/webpack-loader-bee/package-lock.json": "1b34e80f8cb14dbba4489caac2331990ab2ee75f",
+    "tools/webpack-loader-bee/package.json": "0a2499fa8a392c4f40eb8e82241fd223ef12df0b",
+    "tools/webpack-loader-bee/.rush/temp/package-deps_build.json": "273b8e1a2724a1c3573c63b618cd7648d1029b80",
+    "tools/webpack-loader-bee/src/loader.ts": "3c0fad58f4362c02468232c274a182cac1e463c9",
+    "tools/webpack-loader-bee/src/options.json": "bba7c7d8181384f4355c20137e9f5496c2c52fcd",
+    "tools/webpack-loader-bee/tsconfig.json": "1f4a7852505e049a1094abfb5d94a61294b58c19"
+  },
+  "arguments": "tsc --build ./tsconfig.json "
+}

@@ -1,0 +1,69 @@
+<style type="text/scss">
+  .todo {
+    &__list {
+      padding: 5px;
+    }
+    &__item {
+      display: flex;
+      &__check {
+        flex: 1 0 20px;
+      }
+      &__name {
+        flex: 1 1;
+      }
+    }
+  }
+</style>
+<div class="todo__list">
+  <% if (todos) { todos.forEach(todo => { %>
+  <div class="todo__item  <%= todo.done ? 'todo__item--done' : '' %>">
+    <div class="todo__item__check" <%-bind('click', markAsDone(todo))%>>
+      <% if (todo.done) {%>
+      <input type="checkbox" checked />
+      <% } else {%>
+      <input type="checkbox" />
+      <% }%>
+    </div>
+    <div class="todo__item__name"><%=todo.name%></div>
+    <div class="todo__item"><%=todo.name%></div>
+  </div>
+  <% } } %>
+</div>
+<script>
+  import { Watch, Static, Bind, Module } from '@mybee/core';
+  interface Todo {
+    name: string;
+    done: Boolean;
+  }
+
+  @Module()
+  export default class TodoComponent {
+    @Watch()
+    todos: Array<Todo> = [];
+
+    @Static()
+    hash: string;
+
+    @Bind()
+    markAsDone(todo: Todo) {
+      this.markTodoAsDone(todo);
+    }
+
+    @BindTo({overridenModule: TodoItemComponent, isPreventDefault: true})
+    markAsDone(todo: Todo) {
+      
+    }
+
+    markTodoAsDone(todo: Todo) {
+      this.todos = todos.map(({ id }) => {
+        if (todo.id === id) {
+          return {
+            ...todo,
+            done: true,
+          };
+        }
+        return todo;
+      });
+    }
+  }
+</script>

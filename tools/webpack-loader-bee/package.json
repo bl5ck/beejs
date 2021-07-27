@@ -1,17 +1,25 @@
 {
-  "name": "@beejsdev/bee-webpack-loader",
+  "name": "@mybee/bee-webpack-loader",
   "version": "0.0.1",
   "description": "Bee file webpack loader",
-  "main": "src/loader.js",
-  "dependencies": {},
+  "main": "dist/loader.js",
+  "dependencies": {
+    "webpack": "^5.46.0"
+  },
   "devDependencies": {
+    "@types/node": "^16.4.3",
+    "@types/webpack": "^5.28.0",
     "babel-jest": "^27.0.6",
     "jest": "^27.0.6",
     "loader-utils": "^2.0.0",
-    "schema-utils": "^3.1.1"
+    "schema-utils": "^3.1.1",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build -- --watch",
+    "build": "tsc --build ./tsconfig.json"
   },
   "author": "",
   "license": "MIT"

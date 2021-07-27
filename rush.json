@@ -453,17 +453,17 @@
     // },
     // 
     {
-      "packageName": "@beejsdev/core",
+      "packageName": "@mybee/core",
       "projectFolder": "core",
       "reviewCategory": "core"
     },
     {
-      "packageName": "@beejsdev/bee-webpack-loader",
+      "packageName": "@mybee/bee-webpack-loader",
       "projectFolder": "tools/webpack-loader-bee",
       "reviewCategory": "tools"
     },
     {
-      "packageName": "@beejsdev/examples.bees-todo",
+      "packageName": "@mybee/examples.bees-todo",
       "projectFolder": "examples/bees-todo",
       "reviewCategory": "examples"
     }
