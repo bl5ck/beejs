@@ -1,8 +1,8 @@
 {
-  "name": "@mybee/bee-webpack-loader",
+  "name": "@mybee/bee-webpack-plugin",
   "version": "0.0.1",
-  "description": "Bee file webpack loader",
-  "main": "dist/loader.js",
+  "description": "Bee file webpack plugin",
+  "main": "dist/plugin.js",
   "dependencies": {
     "webpack": "^5.46.0"
   },

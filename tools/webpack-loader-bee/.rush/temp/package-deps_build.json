@@ -1,11 +1,11 @@
 {
   "files": {
-    "tools/webpack-loader-bee/.rush/temp/package-deps_build.json": "46dfbe6449e1efb90fe95a6b703cd429ffb49a92",
+    "tools/webpack-loader-bee/.rush/temp/package-deps_build.json": "6d93f296a0c0307666bb9c88fe0355d196e8c351",
     "tools/webpack-loader-bee/.rush/temp/shrinkwrap-deps.json": "d5e3ac2790c8173a8de5e6837adc045d083298cd",
     "tools/webpack-loader-bee/babel.config.js": "f037a1a2a1477424dfca78799d57f863a5b74f81",
     "tools/webpack-loader-bee/package-lock.json": "1b34e80f8cb14dbba4489caac2331990ab2ee75f",
-    "tools/webpack-loader-bee/package.json": "0a2499fa8a392c4f40eb8e82241fd223ef12df0b",
-    "tools/webpack-loader-bee/src/loader.ts": "d816c0be02b0d8a96cfc027372f375c61f5e569b",
+    "tools/webpack-loader-bee/package.json": "214c0e86377fa84ac7f1d2ce55d673c02c2e03e2",
+    "tools/webpack-loader-bee/src/loader.ts": "3abb8210093e2727ea3cca9d3373d920c8739704",
     "tools/webpack-loader-bee/src/options.json": "bba7c7d8181384f4355c20137e9f5496c2c52fcd",
     "tools/webpack-loader-bee/tsconfig.json": "1f4a7852505e049a1094abfb5d94a61294b58c19"
   },

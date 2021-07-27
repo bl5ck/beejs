@@ -12,4 +12,6 @@ export default class Precompiler {
   resolveStaticValue<T>(filePath: string, property: string): T {
     return this.staticValues[filePath][property];
   }
+  transformImportStatement(path: string) {}
+  bootstrap() {}
 }

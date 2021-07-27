@@ -1,0 +1,11 @@
+{
+  "name": "@mybee/bee-babel-preset",
+  "version": "0.0.1",
+  "description": "Bee file babel transpiler",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Steve Tran",
+  "license": "MIT"
+}

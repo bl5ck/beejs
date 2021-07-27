@@ -1,9 +1,10 @@
 const htmlWebpackPlugin = require('html-webpack-plugin');
+const BeeWebpackPlugin = require('@mybee/bee-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const path = require('path');
-
+console.log(BeeWebpackPlugin);
 module.exports = {
   mode: Boolean(process.env.NODE_ENV) ? process.env.NODE_ENV : 'production',
   entry: {
@@ -65,6 +66,10 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash:8].css',
       chunkFilename: '[name].[contenthash:8].css',
+    }),
+    new BeeWebpackPlugin({
+      index: path.resolve(__dirname, 'public', 'index.html'),
+      include: '.src/**/*.bee',
     }),
     new htmlWebpackPlugin({
       template: path.resolve(__dirname, 'public', 'index.html'),

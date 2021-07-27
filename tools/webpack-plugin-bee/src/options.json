@@ -1,0 +1,12 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "index": {
+      "type": "string"
+    },
+    "include": {
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

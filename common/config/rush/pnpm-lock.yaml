@@ -4,6 +4,7 @@ specifiers:
   '@babel/core': ^7.14.8
   '@babel/preset-env': ^7.14.8
   '@rush-temp/bee-webpack-loader': file:./projects/bee-webpack-loader.tgz
+  '@rush-temp/bee-webpack-plugin': file:./projects/bee-webpack-plugin.tgz
   '@rush-temp/core': file:./projects/core.tgz
   '@rush-temp/examples.bees-todo': file:./projects/examples.bees-todo.tgz
   '@types/ejs': ^3.0.7
@@ -31,6 +32,7 @@ dependencies:
   '@babel/core': 7.14.8
   '@babel/preset-env': 7.14.8_@babel+core@7.14.8
   '@rush-temp/bee-webpack-loader': file:projects/bee-webpack-loader.tgz_cefb18eb9885aa8c3ca03631ca81513b
+  '@rush-temp/bee-webpack-plugin': file:projects/bee-webpack-plugin.tgz_cefb18eb9885aa8c3ca03631ca81513b
   '@rush-temp/core': file:projects/core.tgz
   '@rush-temp/examples.bees-todo': file:projects/examples.bees-todo.tgz
   '@types/ejs': 3.0.7
@@ -5231,6 +5233,33 @@ packages:
     resolution: {integrity: sha512-wUSM2BvOTun6BmyclDdWsPle8szE9Aotf7xeVJEqGaBccatonUYKI6kiPS8DRxdpnk1ekdTgT0MST7YWFoR4Tw==, tarball: file:projects/bee-webpack-loader.tgz}
     id: file:projects/bee-webpack-loader.tgz
     name: '@rush-temp/bee-webpack-loader'
+    version: 0.0.0
+    dependencies:
+      '@types/node': 16.4.3
+      '@types/webpack': 5.28.0_webpack-cli@4.7.2
+      babel-jest: 27.0.6_@babel+core@7.14.8
+      jest: 27.0.6_ts-node@10.1.0
+      loader-utils: 2.0.0
+      schema-utils: 3.1.1
+      ts-node: 10.1.0_9c9608add82e342d39d60fef9af9e8e0
+      typescript: 4.3.5
+      webpack: 5.46.0_webpack-cli@4.7.2
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@swc/core'
+      - '@swc/wasm'
+      - bufferutil
+      - canvas
+      - node-notifier
+      - supports-color
+      - utf-8-validate
+      - webpack-cli
+    dev: false
+
+  file:projects/bee-webpack-plugin.tgz_cefb18eb9885aa8c3ca03631ca81513b:
+    resolution: {integrity: sha512-s0vYHOY/0fMrd/JzMJwjSaYBiJ30x2NZIFyhC72pS6AW1/BulS9FJnLzPxnfAopNf6+mMoq3C7vwc/hEPeu63g==, tarball: file:projects/bee-webpack-plugin.tgz}
+    id: file:projects/bee-webpack-plugin.tgz
+    name: '@rush-temp/bee-webpack-plugin'
     version: 0.0.0
     dependencies:
       '@types/node': 16.4.3
