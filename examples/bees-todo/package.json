@@ -4,10 +4,14 @@
   "description": "An example of using BeeJS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cross-env NODE_ENV=development npx npm-run-all -s build:main build:webpack",
+    "build:main:watch": "npm run build:main -- --watch",
+    "build:main": "tsc --build ./tsconfig.json",
+    "build:prod": "cross-env NODE_ENV=production npx npm-run-all -s build:main build:webpack",
+    "build:webpack:watch": "npm run build:webpack -- --watch",
     "build:webpack": "webpack -c ./webpack.config.js",
-    "build:main": "tsc --build ./tsconfig.json"
+    "build": "cross-env NODE_ENV=development npx npm-run-all -s build:main build:webpack",
+    "dev": "cross-env NODE_ENV=development npx npm-run-all -p build:main:watch build:webpack:watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Steve Tran",
   "license": "MIT",

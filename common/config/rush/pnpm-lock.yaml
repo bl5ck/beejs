@@ -5,6 +5,7 @@ specifiers:
   '@babel/preset-env': ^7.14.8
   '@rush-temp/bee-webpack-loader': file:./projects/bee-webpack-loader.tgz
   '@rush-temp/bee-webpack-plugin': file:./projects/bee-webpack-plugin.tgz
+  '@rush-temp/cli': file:./projects/cli.tgz
   '@rush-temp/core': file:./projects/core.tgz
   '@rush-temp/examples.bees-todo': file:./projects/examples.bees-todo.tgz
   '@types/ejs': ^3.0.7
@@ -33,6 +34,7 @@ dependencies:
   '@babel/preset-env': 7.14.8_@babel+core@7.14.8
   '@rush-temp/bee-webpack-loader': file:projects/bee-webpack-loader.tgz_cefb18eb9885aa8c3ca03631ca81513b
   '@rush-temp/bee-webpack-plugin': file:projects/bee-webpack-plugin.tgz_cefb18eb9885aa8c3ca03631ca81513b
+  '@rush-temp/cli': file:projects/cli.tgz
   '@rush-temp/core': file:projects/core.tgz
   '@rush-temp/examples.bees-todo': file:projects/examples.bees-todo.tgz
   '@types/ejs': 3.0.7
@@ -5257,7 +5259,7 @@ packages:
     dev: false
 
   file:projects/bee-webpack-plugin.tgz_cefb18eb9885aa8c3ca03631ca81513b:
-    resolution: {integrity: sha512-s0vYHOY/0fMrd/JzMJwjSaYBiJ30x2NZIFyhC72pS6AW1/BulS9FJnLzPxnfAopNf6+mMoq3C7vwc/hEPeu63g==, tarball: file:projects/bee-webpack-plugin.tgz}
+    resolution: {integrity: sha512-6hr1XiG0GjznG7To5Vf+YQ9gK6d60VJEk7Rkd5iD9D09YN5Ww3OEXQLMDm4wJK3+WpBvfjqhLYfdbspnUVDIRA==, tarball: file:projects/bee-webpack-plugin.tgz}
     id: file:projects/bee-webpack-plugin.tgz
     name: '@rush-temp/bee-webpack-plugin'
     version: 0.0.0
@@ -5283,6 +5285,15 @@ packages:
       - webpack-cli
     dev: false
 
+  file:projects/cli.tgz:
+    resolution: {integrity: sha512-PV9l5VjNfzPxDCspNRv9wyL2ZKs7/pIuXPvSw9QNW2+0qx7QBnlLODHmzW7sefajWd/ktCLtyBmpwVrQ8gxP2w==, tarball: file:projects/cli.tgz}
+    name: '@rush-temp/cli'
+    version: 0.0.0
+    dependencies:
+      reflect-metadata: 0.1.13
+      typescript: 4.3.5
+    dev: false
+
   file:projects/core.tgz:
     resolution: {integrity: sha512-q4A63XkCDt/y7c4k9FlmroAY5grkYqhuikYUUgshj6bucIf/8sBY7PPqIj7y3DjUiDL3J212WF4Uyw9R8o/sSg==, tarball: file:projects/core.tgz}
     name: '@rush-temp/core'
@@ -5295,7 +5306,7 @@ packages:
     dev: false
 
   file:projects/examples.bees-todo.tgz:
-    resolution: {integrity: sha512-KDpPREUtwy5Q3L4m5xU94uSVobAC1SHhdoPUrj8u5Ny/cPEZ2axOzcE+p9ZFYYBtj5WWjzz3hdjpXiphmCqKtQ==, tarball: file:projects/examples.bees-todo.tgz}
+    resolution: {integrity: sha512-Aw3DZ0qlOC89DWzt2ElYCt+EgmzbodUWlR19UG4iutmXSBLB2n2JZ6Ee1pwqeT5FO+Jg9NdMYqxyCinMh9vxFw==, tarball: file:projects/examples.bees-todo.tgz}
     name: '@rush-temp/examples.bees-todo'
     version: 0.0.0
     dependencies:

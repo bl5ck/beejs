@@ -4,7 +4,7 @@
     "index": {
       "type": "string"
     },
-    "include": {
+    "entry": {
       "type": "string"
     }
   },

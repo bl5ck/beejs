@@ -1,8 +1,11 @@
 import Singleton from '../../decorators/Singleton';
+import * as fs from 'fs';
+import Parser from './Parser';
 
 @Singleton
 export default class Precompiler {
-  private staticValues = (window as any).βStaticValues;
+  private staticValues;
+  private parser = new Parser();
   setStaticValue<T>(filePath: string, property: string, value: T) {
     if (!this.staticValues[filePath]) {
       this.staticValues[filePath] = {};
@@ -12,6 +15,9 @@ export default class Precompiler {
   resolveStaticValue<T>(filePath: string, property: string): T {
     return this.staticValues[filePath][property];
   }
-  parseBeeFile(path: string) {}
+  parseBeeFile(path: string) {
+    const content = fs.readFileSync(path, 'utf8');
+    console.log(JSON.stringify(this.parser.parse(content)));
+  }
   bootstrap() {}
 }

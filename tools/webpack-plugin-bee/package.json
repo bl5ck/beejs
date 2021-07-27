@@ -7,6 +7,8 @@
     "webpack": "^5.46.0"
   },
   "devDependencies": {
+    "@mybee/core": "~0.0.1",
+    "@mybee/cli": "~0.0.1",
     "@types/node": "^16.4.3",
     "@types/webpack": "^5.28.0",
     "babel-jest": "^27.0.6",

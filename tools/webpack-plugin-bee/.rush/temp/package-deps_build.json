@@ -1,12 +1,11 @@
 {
   "files": {
-    "tools/webpack-plugin-bee/.rush/temp/package-deps_build.json": "3d97d93d6390734f3ff7a5d1f5444b45e19fdcbb",
     "tools/webpack-plugin-bee/.rush/temp/shrinkwrap-deps.json": "d5e3ac2790c8173a8de5e6837adc045d083298cd",
     "tools/webpack-plugin-bee/babel.config.js": "f037a1a2a1477424dfca78799d57f863a5b74f81",
     "tools/webpack-plugin-bee/package-lock.json": "1b34e80f8cb14dbba4489caac2331990ab2ee75f",
-    "tools/webpack-plugin-bee/package.json": "699d202ed4b6ae3aef34dd94a136020cf33e719d",
-    "tools/webpack-plugin-bee/src/options.json": "aa169b9ecac5c508df24853a07281f09dde5cf8e",
-    "tools/webpack-plugin-bee/src/plugin.ts": "3bf56b0982561af6a0f171b2ed324141cc58f063",
+    "tools/webpack-plugin-bee/package.json": "4776a59b0a79cb5e32d277446ede63f3c2068ccd",
+    "tools/webpack-plugin-bee/src/options.json": "2729a2c654ae352b2cda59daab6bf88e8e3bc552",
+    "tools/webpack-plugin-bee/src/plugin.ts": "6bfa671f14b3d258116e64ce8ffb79d5812d0c13",
     "tools/webpack-plugin-bee/tsconfig.json": "1f4a7852505e049a1094abfb5d94a61294b58c19"
   },
   "arguments": "tsc --build ./tsconfig.json "

@@ -1,0 +1,16 @@
+{
+  "files": {
+    "cli/.rush/temp/package-deps_build.json": "4dd660529f91d774a1bbce452e7984d004df12ab",
+    "cli/.rush/temp/shrinkwrap-deps.json": "db75889922a10804f14fd3ded7e08a4225238a55",
+    "cli/lib/decorators/Singleton.ts": "9d2b02c4977f9b42285e941a36d9d83010b7ec3c",
+    "cli/lib/decorators/index.ts": "1c123d97d80dedef421722aa85da00ac7487ef86",
+    "cli/lib/index.ts": "d66de041b3ee7efde1464717db3247a3a169fc5b",
+    "cli/lib/template/index.ts": "3e18dd27b30ae207738e3d3f6c4ee7cd84956bec",
+    "cli/lib/template/precompiler/Precompiler.ts": "8c06de941d302840e46d43b87529cb6e200601b2",
+    "cli/lib/template/precompiler/index.ts": "a83b2d67d8b143e0cb891e24e4db0fb979d20508",
+    "cli/package-lock.json": "fb55125fcf45d9558b8d3cff3006eb7006913f79",
+    "cli/package.json": "209585ef46a6e6a309880b04839b3f7ebaac88e3",
+    "cli/tsconfig.json": "1d5ee68350e830b6d3408c80b2a7e72b79bfcd1b"
+  },
+  "arguments": "tsc --build ./tsconfig.json "
+}

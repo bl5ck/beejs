@@ -449,6 +449,11 @@
       "reviewCategory": "core"
     },
     {
+      "packageName": "@mybee/cli",
+      "projectFolder": "cli",
+      "reviewCategory": "cli"
+    },
+    {
       "packageName": "@mybee/bee-webpack-loader",
       "projectFolder": "tools/webpack-loader-bee",
       "reviewCategory": "tools"

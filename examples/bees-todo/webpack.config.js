@@ -4,11 +4,14 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const path = require('path');
+const glob = require('glob');
+
 console.log(BeeWebpackPlugin);
 module.exports = {
   mode: Boolean(process.env.NODE_ENV) ? process.env.NODE_ENV : 'production',
   entry: {
     main: './dist/main.js',
+    bee: glob.sync('./src/**/*.bee'),
   },
   output: {
     filename: '[name].[contenthash:8].js',
@@ -69,7 +72,7 @@ module.exports = {
     }),
     new BeeWebpackPlugin({
       index: path.resolve(__dirname, 'public', 'index.html'),
-      include: '.src/**/*.bee',
+      entry: 'bee',
     }),
     new htmlWebpackPlugin({
       template: path.resolve(__dirname, 'public', 'index.html'),
@@ -80,7 +83,7 @@ module.exports = {
     extensions: ['*', '.js', '.bee', '.json'],
   },
   optimization: {
-    moduleIds: 'hashed',
+    moduleIds: 'deterministic',
     runtimeChunk: 'single',
     splitChunks: {
       cacheGroups: {

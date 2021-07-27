@@ -1,6 +1,6 @@
 {
   "files": {
-    "core/.rush/temp/package-deps_build.json": "e4403d68486d0975f1a63d94c20d7fdacd4ee9e2",
+    "core/.rush/temp/package-deps_build.json": "991a7ef4a11e58297799776c4a0a4cfa8c051e89",
     "core/.rush/temp/shrinkwrap-deps.json": "b1e3a1ad7a1222bf94199a10676d136ee2509a02",
     "core/lib/api/bootstrap.ts": "06b297dfe1c2c70fa726606d703e6cf545172f78",
     "core/lib/api/index.ts": "9ce2e166bb67df12e5589d768fda5f630658b56b",
@@ -18,8 +18,8 @@
     "core/lib/template/ejs-helpers/bind.ts": "77e07b7ecaa6d7718a690ed54b8d6e1802edb2b3",
     "core/lib/template/ejs-helpers/index.ts": "4921a48644e4cfc96195e13f4c4f77022061dccf",
     "core/lib/template/index.ts": "c1748aea5f736f1c4c8bf8c86821bf1d839fc553",
-    "core/lib/template/precompiler/Precompiler.ts": "afc9a76ff1599ac8736cf0d923a2aaef37cf425e",
-    "core/lib/template/precompiler/index.ts": "54591d4b062c0e1d765bc60417b874a2facdf85e",
+    "core/lib/template/precompiler/Precompiler.ts": "8c06de941d302840e46d43b87529cb6e200601b2",
+    "core/lib/template/precompiler/index.ts": "a83b2d67d8b143e0cb891e24e4db0fb979d20508",
     "core/lib/template/runtime-compiler/RuntimeCompiler.ts": "6b0afde9e615a939746863ed6d7d326978473c86",
     "core/lib/template/runtime-compiler/TemplateEngine/TemplateEngine.ts": "0bd3ca97c213a52b37a2a6039adbfc29004934fe",
     "core/lib/template/runtime-compiler/TemplateEngine/index.ts": "00f2811a2da80bc63c6ce5c93cb380f1ee7ec364",
