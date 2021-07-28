@@ -6,7 +6,6 @@ const autoprefixer = require('autoprefixer');
 const path = require('path');
 const glob = require('glob');
 
-console.log(BeeWebpackPlugin);
 module.exports = {
   mode: Boolean(process.env.NODE_ENV) ? process.env.NODE_ENV : 'production',
   entry: {

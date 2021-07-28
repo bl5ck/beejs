@@ -29,7 +29,7 @@
   </div>
   <% } } %>
 </div>
-<script>
+<script type="text/typescript">
   import { Watch, Static, Bind, Module } from '@mybee/core';
   interface Todo {
     name: string;
