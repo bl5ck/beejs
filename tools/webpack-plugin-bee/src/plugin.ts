@@ -3,7 +3,7 @@ import { Schema } from 'schema-utils/declarations/validate';
 import * as schema from './options.json';
 import * as path from 'path';
 import { Compiler, Compilation, Dependency } from 'webpack';
-import { Precompiler } from '@mybee/cli';
+import { Precompiler, ParsedTagMeta } from '@mybee/cli';
 export = class BeeWebpackPlugin {
   options: {
     index: string;
@@ -54,7 +54,7 @@ export = class BeeWebpackPlugin {
               new Promise(resolve =>
                 resolve(this.precompiler.parseBeeFile(dependency.request))
               )
-                .then(meta => {})
+                .then((meta: ParsedTagMeta) => {})
                 .catch(error => ({ success: false, error: error }))
             )
           );
