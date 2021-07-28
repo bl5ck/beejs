@@ -17,7 +17,7 @@ export default class Precompiler {
   }
   parseBeeFile(path: string) {
     const content = fs.readFileSync(path, 'utf8');
-    console.log(JSON.stringify(this.parser.parse(content)));
+    return this.parser.parse(content);
   }
   bootstrap() {}
 }

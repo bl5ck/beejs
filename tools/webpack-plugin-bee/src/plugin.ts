@@ -50,11 +50,13 @@ export = class BeeWebpackPlugin {
             this.options.entry
           ).dependencies;
           Promise.all(
-            dependencies.map((dependency: Dependency & { request: string }) => {
-              return new Promise((resolve, reject) => {
-                resolve(this.precompiler.parseBeeFile(dependency.request));
-              });
-            })
+            dependencies.map((dependency: Dependency & { request: string }) =>
+              new Promise(resolve =>
+                resolve(this.precompiler.parseBeeFile(dependency.request))
+              )
+                .then(meta => {})
+                .catch(error => ({ success: false, error: error }))
+            )
           );
         }
         callback();

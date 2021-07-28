@@ -1,4 +1,6 @@
 import Singleton from '../../decorators/Singleton';
+import ParsedMeta from '../../types/interfaces/ParsedMeta';
+import ParsedTagMeta from '../../types/interfaces/ParsedTagMeta';
 
 @Singleton
 export default class Parser {
@@ -24,11 +26,11 @@ export default class Parser {
     }
     return allMatches;
   }
-  parse(content: string) {
+  parse(content: string): ParsedMeta {
     const scriptTags = this.getScriptTags(content);
     const styleTags = this.getStyleTags(content);
-    const scripts = [];
-    const styles = [];
+    const scripts: Array<ParsedTagMeta> = [];
+    const styles: Array<ParsedTagMeta> = [];
     const processTag = (tag: string) => {
       if (scriptTags.includes(tag)) {
         scripts.push(this.parseTagString(tag, 'script'));
@@ -50,7 +52,7 @@ export default class Parser {
       template,
     };
   }
-  parseTagString(tagString: string, tagName: string) {
+  parseTagString(tagString: string, tagName: string): ParsedTagMeta {
     const processing = tagString.trim();
     const content = processing.replace(this.getTagContentToken(tagName), '');
     const args = {};
