@@ -12,6 +12,10 @@ export default class Parser {
     let r = regex;
     const allMatches: Array<Array<string>> = [];
     while ((matches = r.exec(processing)) !== null) {
+      // This is necessary to avoid infinite loops with zero-width matches
+      if (matches.index === r.lastIndex) {
+        r.lastIndex++;
+      }
       const found = [...matches];
       if (eachFn) {
         eachFn(found, matches.index);
