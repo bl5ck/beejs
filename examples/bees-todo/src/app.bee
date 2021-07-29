@@ -1,6 +1,7 @@
-<%-include('./todo/todo.bee')%>
+<%-component(TodoComponent)%>
 <script>
   import { Module } from '@mybee/core';
+  import TodoComponent from './todo/todo.bee';
 
   @Module()
   export default class AppComponent {}

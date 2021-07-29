@@ -4,15 +4,16 @@
   "description": "Bee file webpack loader",
   "main": "dist/loader.js",
   "dependencies": {
-    "webpack": "^5.46.0"
+    "webpack": "^5.46.0",
+    "loader-utils": "^2.0.0",
+    "schema-utils": "^3.1.1",
+    "@mybee/cli": "~0.0.1"
   },
   "devDependencies": {
     "@types/node": "^16.4.3",
     "@types/webpack": "^5.28.0",
     "babel-jest": "^27.0.6",
     "jest": "^27.0.6",
-    "loader-utils": "^2.0.0",
-    "schema-utils": "^3.1.1",
     "ts-node": "^10.1.0",
     "typescript": "^4.3.5"
   },

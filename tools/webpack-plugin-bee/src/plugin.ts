@@ -37,27 +37,27 @@ export = class BeeWebpackPlugin {
         // compilation.addModule(/* ... */);
         if (this.options.entry) {
           // clean bee js chunk
-          compilation.chunks.forEach(chunk => {
-            if (this.options.entry === chunk.name) {
-              chunk.files.forEach(file => {
-                if (file.match(/.*\.js$/)) {
-                  compilation.deleteAsset(file);
-                }
-              });
-            }
-          });
-          const dependencies = compilation.entries.get(
-            this.options.entry
-          ).dependencies;
-          Promise.all(
-            dependencies.map((dependency: Dependency & { request: string }) =>
-              new Promise(resolve =>
-                resolve(this.precompiler.parseBeeFile(dependency.request))
-              )
-                .then((meta: ParsedTagMeta) => {})
-                .catch(error => ({ success: false, error: error }))
-            )
-          );
+          // compilation.chunks.forEach(chunk => {
+          //   if (this.options.entry === chunk.name) {
+          //     chunk.files.forEach(file => {
+          //       if (file.match(/.*\.js$/)) {
+          //         compilation.deleteAsset(file);
+          //       }
+          //     });
+          //   }
+          // });
+          // const dependencies = compilation.entries.get(
+          //   this.options.entry
+          // ).dependencies;
+          // Promise.all(
+          //   dependencies.map((dependency: Dependency & { request: string }) =>
+          //     new Promise(resolve =>
+          //       resolve(this.precompiler.parseBeeFile(dependency.request))
+          //     )
+          //       .then((meta: ParsedTagMeta) => {})
+          //       .catch(error => ({ success: false, error: error }))
+          //   )
+          // );
         }
         callback();
       }
